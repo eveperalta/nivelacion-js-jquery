@@ -21,10 +21,6 @@ for (var i = recipesArray.length - 1; i >= 0; i--) {
 		console.log("Recipes: ", [i]);
 	
 	}
-	
-	console.log('Recipes: ', recipesArray);
-
-
 /*
 * Función que se encarga de pintar UNA recetas que tenga 
 * marcado el atributo "highlighted" como TRUE
@@ -33,16 +29,28 @@ for (var i = recipesArray.length - 1; i >= 0; i--) {
 */
 function renderRecipe(recipe) {
 	console.log('Voy a pintar la receta: ', recipe);
+
 }
 
-
+renderRecipe([1]);
 
 /*
 * Función que se encarga de pintar todas las actividades
 */
-function renderActivities(activitiesArray) {
-	console.log('Activities: ', activitiesArray);
+$(document).ready (function renderActivities(activitiesArray){
+
+console.log('Activities: ', activitiesArray);
+
+for (var i = renderActivities.length - 1; i >= 0; i--) {
+	renderActivities[i]
 }
+	if($().attr("highlighted", true))
+		console.log("Recipes: ", [i]);
+	
+	}
+}) 
+	
+
 
 /*
 * Función que se encarga de pintar una actividad
