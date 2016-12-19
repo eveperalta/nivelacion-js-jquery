@@ -1,7 +1,7 @@
 $(document).ready( function(){
 	$(document).ready(function(){
 	$(".js-back").hide();
-})
+});
 
 $(".callout-news p").append("NUEVAS RECETAS")
 	//La variable "recipesArray" esta declarada en el archivo "data/recipes.js"
@@ -9,16 +9,21 @@ $(".callout-news p").append("NUEVAS RECETAS")
 
 });
 
-
-
-
 /*
 * Función que se encarga de pintar TODAS las recetas que tengan 
 * marcado el atributo "highlighted" como TRUE
 */
 function renderHighlightedRecipes(recipesArray) {
-	console.log('Recipes: ', recipesArray);
+for (var i = recipesArray.length - 1; i >= 0; i--) {
+	recipesArray[i]
 }
+	if($(recipesArray).attr("highlighted", true))
+		console.log("Recipes: ", [i]);
+	
+	}
+	
+	console.log('Recipes: ', recipesArray);
+
 
 /*
 * Función que se encarga de pintar UNA recetas que tenga 
