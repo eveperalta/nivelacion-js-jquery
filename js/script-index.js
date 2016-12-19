@@ -2,6 +2,8 @@ $(document).ready( function(){
 	$(document).ready(function(){
 	$(".js-back").hide();
 })
+
+$(".callout-news p").append("NUEVAS RECETAS")
 	//La variable "recipesArray" esta declarada en el archivo "data/recipes.js"
 	renderHighlightedRecipes(recipesArray);
 
