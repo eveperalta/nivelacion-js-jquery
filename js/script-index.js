@@ -1,11 +1,33 @@
 $(document).ready( function(){
-
+	$(document).ready(function(){
+	$(".js-back").hide();
+})
 	//La variable "recipesArray" esta declarada en el archivo "data/recipes.js"
 	renderHighlightedRecipes(recipesArray);
 
 });
 
 
+
+/*$(document).ready(function(){
+	$(".js-back").hide();
+})/*
+//FUNCION PARA EL NAVBAR HIDE & SHOW DE FLECHA Y MENU
+/*$(document).ready(function(){
+	$("#mostrar").on("click", function(){
+		$(".js-menu").show();
+		$(".js-back").hide();
+		console.log("se muestra la imagen")
+	})
+
+});
+$(document).ready(function(){
+	$("#ocultar").on("click", function(){
+	$(".js-menu").hide();
+	$(".js-back").show();	
+	})
+	
+});*/
 /*
 * Función que se encarga de pintar TODAS las recetas que tengan 
 * marcado el atributo "highlighted" como TRUE
